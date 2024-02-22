@@ -1,0 +1,106 @@
+.main{background-color: }
+
+
+.video{background-color: #d51635;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 100px;
+font-style: normal;
+color: whitesmoke;
+outline-color: black;
+line-height: 80px;
+font-weight: bolder; }
+
+
+.heading{background-color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 15px;
+font-style: normal;
+color: #08154a;
+outline-color: black;
+line-height: 75px;
+font-weight: bold}
+
+.table1{background-color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 18px;
+font-style: normal;
+color: #08154a;
+outline-color: black;
+line-height: 0px;
+font-weight: bold;}
+
+.Mens{background-color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 25px;
+font-style: normal;
+color: #08154a;
+outline-color: black;
+line-height: 0px;
+font-weight: bold;
+font: normal}
+
+.desc{background-color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 17px;
+font-style: normal;
+color: #08154a;
+outline-color: black;
+line-height: 30px;
+font-weight: bold;
+font: normal}
+
+.blue{background-color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 17px;
+font-style: normal;
+color: #08154a;
+outline-color: black;
+line-height: 30px;
+font-weight: normal;
+font: normal}
+
+.red{background-color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 17px;
+font-style: normal;
+color: red;
+outline-color: black;
+line-height: 30px;
+font-weight: bold;
+font: normal}
+
+.last{background-color:#d51635 ;
+font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+font-size: 15px;
+font-style: normal;
+color: whitesmoke;
+outline-color: black;
+line-height: 20px;
+font-weight: bolder}
+
+.header{background-color:#08154a ;
+font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+font-size: 20px;
+font-style: none;
+color: inherit;
+outline-color: black;
+line-height: 50px;
+font-weight: bolder;}
+
+.white{background-color:white ;
+font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+font-size: 20px;
+font-style: normal;
+color: #08154a;
+outline-color: black;
+line-height: 20px;
+font-weight: bolder;}
+
+.Logo{background-color: #d51635 ;
+font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+font-size: 20px;
+font-style: normal;
+color: #fff;
+outline-color: black;
+line-height: 35px;
+font-weight: bolder;}
