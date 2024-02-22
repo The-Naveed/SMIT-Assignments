@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfoilo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+    <style>
+        .navbar1 {
+            animation: vibrate-1 0.9s linear infinite both;
+        }
+
+        @keyframes vibrate-1 {
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(-2px, -2px);
+            }
+
+            60% {
+                transform: translate(2px, 2px);
+            }
+
+            80% {
+                transform: translate(2px, -2px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+
+        button,
+        images :hover {
+            text-transform: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: scale(1.01);
+        }
+
+        button:active {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Change to desired active box shadow */
+            transform: scale(.99);
+            /* Change to desired active scale factor */
+        }
+
+
+
+
+        a:hover {
+            text-transform: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+
+
+
+
+
+
+
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #333333;
+            font-family: 'Afacad', sans-serif;
+
+        }
+
+        body fieldset {
+            border: 2px solid wheat;
+            margin: 10px;
+            color: #ffbd39;
+        }
+
+        body legend {
+            padding: 10px;
+            font-size: 20 px;
+            height: auto;
+            color: #ffbd39;
+            text-shadow: 2px 2px black;
+
+        }
+
+        body fieldset {
+            color: white;
+        }
+
+        .education p {
+            color: wheat;
+        }
+
+        .education fieldset {
+            padding: 20px;
+        }
+
+
+        .education ol {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+            color: wheat;
+        }
+
+
+        .body {
+            list-style: none;
+        }
+
+
+
+
+        navbar {
+            box-shadow: wheat 1px 1px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            text-shadow: 2px 2px black;
+
+        }
+
+        navbar .navbar1 {
+            align-items: center;
+            justify-content: center;
+            border: 1px solid none;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px black;
+
+
+        }
+
+        navbar .navbar2 ol {
+            font-size: 20px;
+            border: 1px solid none;
+            color: wheat;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        navbar .navbar2 ol a {
+            font-size: 20px;
+            border: 1px solid none;
+            color: wheat;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            text-decoration: none;
+        }
+
+        .hero {
+            margin: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            text-shadow: 4px 4px black;
+
+        }
+
+        .hero .hero1 .img {
+            border-radius: 59%;
+        }
+
+        .hero .hero2 h2 {
+            color: #ffbd39;
+            font-size: 50px;
+        }
+
+        .hero .hero2 h1 {
+            color: #ffbd39;
+            font-size: 50px;
+        }
+
+        .hero .hero2 p {
+            color: wheat;
+            text-shadow: none;
+        }
+
+        .hero .hero2 h1 span {
+            color: white;
+            font-size: 50px;
+        }
+
+        .hero3 {
+            margin: 10px;
+            border: 2px solid none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .hero3 button {
+            border: 1px solid white;
+            height: 50px;
+            width: 200px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #ffbd39;
+            font-family: 'Afacad', sans-serif;
+        }
+
+
+
+        .hero3 button {
+            border: 1px solid black;
+            height: 50px;
+            width: 200px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #ffbd39;
+            font-family: 'Afacad', sans-serif;
+        }
+
+        .hero3 .download button {
+            color: wheat;
+            border: 1px solid wheat;
+            background-color: rgb(5, 60, 161);
+        }
+
+
+
+
+        .milling {
+            border: 2px solid wheat;
+            margin: 10px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 70px;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+
+        .milling .milling1 {
+            color: #ffbd39;
+            align-items: center;
+            text-align: center;
+        }
+
+        .milling .milling1 span {
+            color: white;
+        }
+
+        .milling .milling2 {
+            align-items: center;
+            text-align: center;
+        }
+
+        .education .h1 {
+            color: #ffbd39;
+        }
+
+
+
+        .projects {
+            margin: 10px;
+        }
+
+        .projects .projects1 {
+            text-align: center;
+            border: 1px solid blue;
+            color: #ffbd39;
+        }
+
+
+        .projects .projects2 {
+            text-align: center;
+            color: #ffbd39;
+        }
+
+
+        .projects .projects2 ol {
+            font-size: 30px;
+            color: wheat;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cards {
+            text-align: center;
+        }
+
+        .cards p {
+            color: wheat;
+            font-weight: bold;
+            border-color: white;
+            font-size: 25px;
+        }
+
+
+
+
+        @media only screen and (max-width:425px) {
+            navbar .navbar1 {
+                font-size: 25px;
+            }
+
+            .navbar2 {
+                display: none;
+            }
+
+            .hero .hero2 h2 {
+                color: #ffbd39;
+                font-size: 30px;
+            }
+
+            .hero {
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .hero .hero2 h1 {
+                color: #ffbd39;
+                font-size: 30px;
+            }
+
+            .hero .hero2 p {
+                color: wheat;
+            }
+
+            .hero .hero2 h1 span {
+                color: white;
+                font-size: 30px;
+            }
+
+            .hero3 button {
+                margin: px;
+                border: 1px solid black;
+                height: 35px;
+                width: 100px;
+                color: black;
+                font-weight: bold;
+                font-size: 12px;
+                background-color: #ffbd39;
+                font-family: 'Afacad', sans-serif;
+            }
+
+            .hero3 .download button {
+                color: wheat;
+                border: 1px solid wheat;
+                background-color: rgb(5, 60, 161);
+            }
+
+            .milling {
+                border: 1px solid wheat;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                font-size: 50px;
+                font-weight: bold;
+                flex-wrap: wrap;
+            }
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <navbar>
+        <div class="navbar1">WELCOME TO MY PROTFOILO</div>
+        <div class="navbar2">
+            <ol>
+                <li><a href="">HOME</li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">RESUME</a></li>
+                <li><a href="">BLOGS</a></li>
+                <li><a href="">CONTACT</a></li>
+
+            </ol>
+        </div>
+    </navbar>
+
+    <section class="hero">
+        <div class="hero1"><img
+                src="https://media.licdn.com/dms/image/D4D03AQFPHkCrJ8Bbwg/profile-displayphoto-shrink_200_200/0/1707116792630?e=1712793600&v=beta&t=GZBZ_Zk6h0eHsnjGTZbvE3-FeNqQa7r9QXp3OsBLxbg">
+        </div>
+
+
+
+        <div class="hero3">
+            <button>Hire Me</button>
+            <span class="download"><button>Download My Resume</button></span>
+
+
+        </div>
+
+        <br>
+
+
+        <div class="images">
+            <div><a href="#"><img width="50px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ0tPXp7tle6nTwaRQXrjX4HB-bdsBqMXwjIwFT3pfJW2hju0ahOXbtb1HODBFOfWaG0&usqp=CAU"></a>
+            </div>
+            <div><a href="#"><img width="50px"
+                        src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"></a>
+            </div>
+            <div><a href="#"><img width="50px"
+                        src="https://e7.pngegg.com/pngimages/753/965/png-clipart-linkedin-linkedin.png"></a></div>
+            <div><a href="#"><img width="50px"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/027/395/710/small/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png"></a>
+            </div>
+
+        </div>
+
+
+        <div class="hero2"><br>
+
+            <h1><span>Hello !</span><br>I'm High-Precision Tool Maker &<br><span>Web & Mobile Application
+                    Developer</span></h1>
+            <p>Hello, I'm Naveed Ahmed, an innovative tool maker, and proficient developer specializing in web and
+                mobile
+                applications. With a passion for crafting cutting-edge solutions, I thrive on transforming ideas into
+                functional, user-friendly tools that empower individuals and businesses alike.
+
+                My journey in technology began with a fascination for problem-solving and a drive to create impactful
+                solutions. Over the years, I've honed my skills in software development, mastering a diverse range of
+                programming languages and frameworks to stay at the forefront of industry trends.
+
+                As a tool maker, I excel in understanding user needs and translating them into intuitive interfaces and
+                robust functionalities. Whether it's streamlining workflows, enhancing productivity, or revolutionizing
+                user experiences, I am dedicated to delivering solutions that exceed expectations.
+
+                In the realm of web and mobile application development, I leverage my expertise to build scalable,
+                responsive, and feature-rich applications tailored to meet the unique requirements of each project. From
+                conceptualization to deployment, I am committed to delivering solutions that not only meet but exceed
+                client objectives.
+
+                With a keen eye for detail and a commitment to excellence, I take pride in my ability to deliver
+                projects on time and within budget, ensuring utmost client satisfaction. Beyond just coding, I believe
+                in fostering collaborative relationships, working closely with clients to understand their vision and
+                bring it to life through technology.</p>
+        </div>
+
+    </section>
+
+    <div class="container">
+        <div>
+            <h1 style="color: #ffbd39;">My Projects</h1>
+            <p style="color: wheat;">Move Slides Or Click images To Visit My Websites</p>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <a href="https://incredibleapple-believe.surge.sh/"><img height="400px"
+                            src="https://www.apple.com/v/iphone-15/c/images/overview/welcome/hero_endframe__e0ajd2ayxqc2_large.jpg"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+
+                <div class="carousel-item">
+
+                    <a href="https://graceful-friends.surge.sh/"><img height="400px"
+                            src="https://educated.pk/wp-content/uploads/2022/04/Saylani-Welfare-Rashan-Online-Registration.jpg"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+
+                <div class="carousel-item">
+
+                    <a href="https://stale-army.surge.sh/"><img height="400px"
+                            src="https://apploye.com/blog/content/images/2023/09/alternatives-of-upwork.png"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+
+                <div class="carousel-item">
+
+                    <a href="https://grandiose-fairies.surge.sh"><img height="400px"
+                            src="https://growth-mkt-blog-wp-uploads.s3.amazonaws.com/uploads/2017/12/vender_na_olx_olist.jpg"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div><br>
+
+
+
+    <div class="container">
+        <section class="education">
+            <fieldset>
+                <legend>
+                    <h1>My Academic Qualifications</h1>
+                </legend>
+                <h2>Saylani Mass IT Training (Dec, 2023 - Present)</h2>
+                <p>Saylani Mass IT Training Center is a leading institution offering top-quality education in web and
+                    mobile
+                    app development. With expert instructors and hands-on learning, students gain practical skills in
+                    HTML,
+                    CSS, JavaScript, and frameworks like React and Angular. The center fosters a dynamic and
+                    collaborative
+                    environment, preparing students for successful careers in the tech industry.</p>
+                <h2>Pak - Swisss Training Centre Karachi (2017 To 2021)</h2>
+                <p>Three year Diploma associate degree with one
+                    year specialization from Pak-Swiss Training
+                    Centre Karachi in Dies & Mold Technology pass
+                    out with First division & Position in final year.
+                    Also act as a group leader in final year project.
+                    The fields of study are Injection mold, pressure
+                    die casting, Machine designing, Tool Designing,
+                    Press tool, Fine blanking, Technical drawing,
+                    Production planning, Special purpose machines,
+                    Spark Erosion, Material science etc.</p>
+                <h2>BAB - UL - ILM Public Secondary School (Passing Year 2015)</h2>
+                <p>Secondary School Certificate
+                    Passing Year: 2015
+                    From BAB-UL-ILM Public Secondary School
+                    First Division B Grade (Science Group)</p>
+            </fieldset>
+            <br>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="education">
+            <fieldset>
+                <legend>
+                    <h1>My Working Experience</h1>
+                </legend>
+                <h2>KIA Lucky Motors Corporation LTD (Feb, 2022 - Present)</h2>
+                <p>As a tooling team leader at KIA Motors I led a team of designers, welders,
+                    fabricators, Machinists and technicians in designing, developing, inspecting
+                    and repairing tools, dies, jigs, fixtures and other projects in compliance with
+                    KAIZEN activities. I received work orders from different departments for new
+                    manufacturing and repair projects, and delegated tasks to members
+                    accordingly. I maintained a preventive maintenance schedule for the repair
+                    of tools, jigs and fixtures and ensured that team members adhered to the
+                    schedule in addition, I kept a daily record of all working progress of projects
+                    and team members including recruitment and appraisal evaluation.</p>
+                <h2>Pak - Swisss Training Centre Karachi (2020 To 2021)</h2>
+                <p>In The Time Period Of One Year Specialization I Perform As An Accomplished
+                    Reverse Engineering And CAD Design Professional, I Possess A Wealth Of
+                    Experience In The Field Of Plastic And Sheet Metal Components. My
+                    Responsibilities Include Reverse Engineering Of Plastic And Sheet Metal
+                    Components, Preparing CAD Data With Bill Of Material, Generating Bill Of
+                    Quantity With Material Purchasing, Publishing 2d Drawings For
+                    Manufacturing, Creating CAM And NC Files For CNC Machining And
+                    Overseeing Additional Machining, Wire EDM, Die Sinking EDM. Ensuring
+                    Optimal Bearing Faces Before and After Trial of Injection Mold
+                </p>
+                <h2>Hameed Engineering</h2>
+                <h3>Tool & Die Technician (Jan, 2018 – Jan, 2022)</h3>
+                <p>As a skilled and experienced tool and die designer and manufacturing lead I
+                    have a proven track record of designing and manufacturing high-quality tool
+                    and dies for various industries. I am proficient in leading and supporting coworkers in machining
+                    and
+                    manufacturing processes, purchasing materials for
+                    new projects, performing preventive maintenance for tool and dies and
+                    troubleshooting and resolving issues during the production of components.</p>
+                <h3>CAD-CAM Operator (Jan, 2016 – Dec, 2017)</h3>
+                <p>I have developed expertise in CAD, CAM & EDM. I am skilled in designing a
+                    diverse range of molds including injection, blow, semi-auto, hand and
+                    vacuum forming cavities press tool and cavities for gravity casting and high
+                    pressure die casting.</p>
+                <h3>Machine Shop Associate (May, 2015 – Dec, 2015)
+                </h3>
+                <p>As an experienced machine operator, I have worked under the supervision of
+                    senior machinists and gained extensive knowledge in manual machines
+                    operations, including lathe machines for step turning, boring, taper cutting,
+                    eccentric machining and threading. Additionally I have experience in
+                    operating milling machines to prepare plates for dies, molds, jigs, fixtures
+                    and other mold accessories and also extends to drilling for fitting mold base,
+                    cooling in cavities and punches and other fitting activities. Also skilled in
+                    surface grinding to prepare mold base plates, inserts, lifters, sliders according
+                    to given drawing and tolerance’s</p>
+
+
+
+            </fieldset><br>
+
+        </section>
+    </div>
+
+
+
+    <div class="container">
+        <h1 style="color: #ffbd39;">My Skills</h1>
+
+        <fieldset>
+            <div class="row m-0 p-2 align-items-center">
+
+                <div class="col-sm-1 col-lg-4 col-md-6 cards">
+                    <div class="">
+                        <img width="200px"
+                            src="https://tristar.b-cdn.net/wp-content/uploads/2023/05/creo-10_RGB_KO_gr.png">
+                        <p>Creo Paramatric</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-1 col-lg-4 col-md-6 cards">
+
+                    <div class="">
+                        <img width="200px" src="https://static.javatpoint.com/tutorial/autocad/images/autocad-logo.png">
+                        <p>Auto CAD</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-1 col-lg-4 col-md-6 cards">
+                    <div class="">
+                        <img width="200px"
+                            src="data:image/jpeg;base64,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">
+                        <p>PRO E</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-1 col-lg-4 col-md-6 cards">
+                    <div class="">
+                        <img width="200px" src="https://www.lizenznu.de/wp-content/uploads/2023/03/OfficePNG.png">
+                        <p>Microsoft Office</p>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-lg-4 col-md-6 cards">
+                    <div class="">
+                        <img height="200px" width="250px"
+                            src="https://i.pinimg.com/564x/cb/c7/6a/cbc76a054c9599cc13d5d69910029a15.jpg">
+                        <p>Web & Mobile<br>Application Development</p>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-lg-4 col-md-6 cards">
+                    <div class="">
+                        <img width="200px"
+                            src="https://agileviet.vn/content/images/size/w600/2020/12/1_cn_XBD307E3lObHk511Qqg.png">
+                        <p>Visual Studio Code</p>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-lg-4 col-md-6 cards">
+                    <div class="">
+                        <img width="200px"
+                            src="https://i.pinimg.com/564x/ef/2c/be/ef2cbe78bf9a4d8e152058ccedc69ac2.jpg">
+                        <p>Tool & Die<br>Manufacturing</p>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-lg-4 col-md-6 cards">
+                    <div class="">
+                        <img width="200px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/SAP-Logo.svg/2560px-SAP-Logo.svg.png">
+                        <p>SAP Logon</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</html>
