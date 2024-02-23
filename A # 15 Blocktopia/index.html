@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>BLOCKTOPIA - The Home Of Crypto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            font-family: "Poppins", sans-serif;
+        }
+
+        .customnav,
+        .customnav2 ol,
+        a {
+            color: white;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+            text-decoration: none;
+            padding: 5px;
+            font-weight: bold;
+            /* border: 1px solid white; */
+        }
+
+        .customnav{align-items: center;}
+
+        .customnav a:hover {
+            color: #ec00Bf;
+        }
+
+
+        .customnav2 ol li button {
+            background-color: #ec00Bf;
+            height: 44px;
+            width: 170px;
+            border-radius: 15px;
+            border: 0px;
+        }
+
+        .customnav2 ol li button:hover {
+            background-color: #ec00c1bb;
+        }
+
+        .roadmap {
+            margin: 100px;
+        }
+
+        .roadmap0 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 65px;
+        }
+
+        .roadmap img {
+            border-radius: 5%;
+            border: 1px solid darkgrey;
+        }
+
+        .roadmap1 {
+            font-size: 70px;
+            font-weight: bolder;
+            line-height: 70px;
+
+        }
+
+        .roadmap2 {
+            font-size: 70px;
+            font-weight: bolder;
+            color: #ec00Bf;
+            line-height: 70px;
+        }
+
+        .roadmap3 button {
+            color: #ec00Bf;
+            height: 44px;
+            width: 220px;
+            border-radius: 15px;
+            border: 1px solid #ec00Bf;
+            background-color: #171717;
+        }
+
+        .roadmap3 button:hover {
+            color: white;
+            height: 44px;
+            width: 220px;
+            border-radius: 15px;
+            border: 1px solid #ec00Bf;
+            background-color: #ec00Bf;
+        }
+
+        .middle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .binance {
+            margin-bottom: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .binance .img {
+            opacity: 50%;
+        }
+
+        .binance .binance1 {
+            position: relative;
+            text-align: center;
+            background-image: url(https://www.bloktopia.com/home/earn_tile.jpg);
+            background-size: cover;
+            width: 586px;
+            height: 346px;
+            border-radius: 12px;
+            border: 2px solid rgba(169, 169, 169, 0.493);
+            padding-top: 70px;
+        }
+
+        .binance .binance1 .image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .binance .binance2 {
+            text-align: center;
+            background-image: url(https://www.bloktopia.com/home/play_tile.jpg);
+            background-size: cover;
+            width: 586px;
+            height: 346px;
+            border-radius: 12px;
+            border: 2px solid rgba(169, 169, 169, 0.493);
+            padding-top: 70px;
+
+
+        }
+
+        .binance .binance3 {
+            text-align: center;
+            background-image: url(https://www.bloktopia.com/home/dao_tile.jpg);
+            background-size: cover;
+            width: 586px;
+            height: 346px;
+            border-radius: 12px;
+            border: 2px solid rgba(169, 169, 169, 0.493);
+            padding-top: 70px;
+
+
+        }
+
+        .binance .binance4 {
+            text-align: center;
+            background-image: url(https://www.bloktopia.com/home/nft_tile.jpg);
+            background-size: cover;
+            width: 586px;
+            height: 346px;
+            border-radius: 12px;
+            border: 2px solid rgba(169, 169, 169, 0.493);
+            padding-top: 70px;
+
+
+        }
+
+        .binance button {
+            color: #ec00Bf;
+            height: 44px;
+            width: 150px;
+            border-radius: 15px;
+            border: 3px solid #ec00Bf;
+            background-color: #171717;
+        }
+
+        .binance button:hover {
+            color: white;
+            border: 2px solid white;
+            background-color: #ec00Bf;
+        }
+
+        .footer0 {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            font-size: 11px;
+            background-color: #171717;
+            text-align: center;
+            border: 1px solid darkgray;
+        }
+
+        .footer0 a,
+        li {
+            color: #ec00Bf;
+            list-style: none;
+        }
+
+        .footer0 a:hover,
+        s {
+            color: white;
+        }
+
+
+        @media only screen and (max-width:425px) {
+
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .customnav .image {
+                align-items: center;
+            }
+            .roadmap img {
+                width: 400px;
+            }
+
+            .middle img {
+                width: 400px;
+            }
+
+            .middle {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+            }
+
+            .binance{gap: 100px;}
+
+
+        }
+    </style>
+
+<body class="bg-black">
+
+    <navbar class="customnav d-flex align-items-center">
+        <div class="customnav1"><img height="31px" width="180px" src="https://www.bloktopia.com/images/logo.png" alt="">
+        </div>
+        <div class="customnav2">
+            <ol>
+                <li><a href="#">Install</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li><a href="#">Earn</a></li>
+                <li><a href="#">Play</a></li>
+                <li><a href="#">$BLOK</a></li>
+                <li><a href="#">DAO</a></li>
+                <li><a href="#">NFT's</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Socials</a></li>
+                <li><a href="#"><button>Connect Wallet</button></a></li>
+            </ol>
+        </div>
+    </navbar>
+
+    <section class="roadmap">
+        <div class="roadmap0">
+            <div>
+                <img height="291px" width="516px" src="https://www.bloktopia.com/home/roadmap/released.jpg" alt="">
+            </div>
+
+            <div>
+                <div class="roadmap1">
+                    ROADMAP
+                </div>
+                <div class="roadmap2">
+                    2024
+                </div><br>
+                <div>
+                    Explore released features, upcoming products, testing progress,<br>and share your thoughts on future
+                    developments!
+                </div><br>
+                <div class="roadmap3">
+                    <button>Find Out More</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="middle">
+        <div><img src="https://www.bloktopia.com/home/vr_headset_man.png" alt=""></div>
+        <div align="center">
+            <h3><strong>WHAT IS BLOKTOPIA?</strong></h3>
+            <p>Bloktopia is the one-stop shop for
+                everything Cryptocurrency and NFTs.
+                Learn the basics or study advanced topics,
+                earn money, play games, make connections,
+                and much more in an immersive
+                virtual environment!</p>
+        </div>
+        <div><img src="https://www.bloktopia.com/home/laptop_metaspaces.png" alt=""></div>
+    </section>
+
+
+
+    <section>
+        <div >
+            <video autoplay loop options style="width: 100%;">
+                <source src="https://www.bloktopia.com/home/lepc.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="binance">
+        <div class="binance1">
+            <div>
+                <h3><strong>Earn</strong></h3>
+                <h6>Join a JOBE or stake your $BLOK to generate passive income</h6>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button>Earn Now</button>
+            </div>
+        </div>
+
+
+        <div class="binance2">
+            <h3><strong>Play</strong></h3>
+            <h6>Create your own unique identity and enter the Home of Crypto</h6>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button>Play Now</button>
+        </div>
+        <div class="binance3">
+            <h3><strong>Dao</strong></h3>
+            <h6>Become a governor and have your say through Bloktopia’s<br>voting system</h6>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button>Vote Now</button>
+        </div>
+        <div class="binance4">
+            <h3><strong>NFT'S</strong></h3>
+            <h6>Own revenue generating REBLOK or ADBLOK NFT’s</h6>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button>Purchase Now</button>
+        </div>
+    </section>
+
+
+    <footer class="footer0">
+        <section class="container">
+
+            <div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="" viewBox="0,0,256,256">
+                    <g fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                                d="M9,4c-2.74952,0 -5,2.25048 -5,5v32c0,2.74952 2.25048,5 5,5h32c2.74952,0 5,-2.25048 5,-5v-32c0,-2.74952 -2.25048,-5 -5,-5zM9,6h32c1.66848,0 3,1.33152 3,3v32c0,1.66848 -1.33152,3 -3,3h-32c-1.66848,0 -3,-1.33152 -3,-3v-32c0,-1.66848 1.33152,-3 3,-3zM15,8c0.414,1.013 2.402,5.38114 3,6.99414v4.00586h2v-4l3,-7h-2.40039l-1.59961,4l-1.59961,-4zM25,11c-1.006,0 -1.77103,0.27531 -2.33203,0.94531c-0.433,0.495 -0.66602,1.28894 -0.66602,2.33594l-0.00195,1.44531c0,1.041 0.20567,1.76095 0.63867,2.25195c0.562,0.667 1.47233,1.02148 2.36133,1.02148c0.889,0 1.81591,-0.35444 2.37891,-1.02344c0.426,-0.49 0.62109,-1.209 0.62109,-2.25v-1.45117c0,-1.048 -0.24197,-1.83508 -0.66797,-2.33008c-0.562,-0.67 -1.44303,-0.94531 -2.33203,-0.94531zM29,11v5.83789c0,0.66 0.09828,1.10848 0.23828,1.39648c0.23,0.473 0.69056,0.71533 1.35156,0.73633c0.911,0.03 1.59516,-0.5607 2.41016,-1.3457v1.375h2v-8h-2v5.375c-0.455,0.539 -0.97863,1.01758 -1.39062,1.01758c-0.273,0 -0.55937,-0.12558 -0.60937,-0.39258v-6zM25,12.61914c0.552,0 1,0.45748 1,1.02148v2.80664c0,0.563 -0.448,1.02148 -1,1.02148c-0.552,0 -1,-0.45748 -1,-1.02148v-2.80664c0,-0.563 0.448,-1.02148 1,-1.02148zM24.99023,22c0,0 -6.70945,0.00031 -11.18945,0.32031c-0.63,0.07 -1.99094,0.08008 -3.21094,1.33008c-0.96,0.94 -1.26953,3.09961 -1.26953,3.09961c0,0 -0.32031,1.53055 -0.32031,4.06055v2.36914c0,2.53 0.32031,4.06055 0.32031,4.06055c0,0 0.30953,2.15937 1.26953,3.10938c1.22,1.24 2.8193,1.20008 3.5293,1.33008c2.56,0.24 10.88086,0.32031 10.88086,0.32031c0,0 6.71922,-0.01008 11.19922,-0.33008c0.63,-0.07 1.99094,-0.08008 3.21094,-1.33008c0.96,-0.94 1.26953,-3.09961 1.26953,-3.09961c0,0 0.32031,-1.53055 0.32031,-4.06055v-2.36914c0,-2.53 -0.32031,-4.06055 -0.32031,-4.06055c0,0 -0.30953,-2.15961 -1.26953,-3.09961c-1.22,-1.25 -2.58094,-1.26008 -3.21094,-1.33008c-4.48,-0.32 -11.18945,-0.32031 -11.18945,-0.32031zM12,26h6v2h-2v10h-2v-10h-2zM25,26h2v4.38086c0.75,-0.88 1.14914,-1.39086 2.11914,-1.38086c0.76,0.01 1.37109,0.4407 1.62109,1.2207c0.13,0.42 0.25977,1.17016 0.25977,2.16016v2.75c-0.01,0.88 -0.1007,1.26945 -0.2207,1.68945c-0.25,0.78 -0.90016,1.17969 -1.66016,1.17969c-0.67,0 -1.48914,-0.47 -2.11914,-1.25v1.25h-2zM18,29h2v6.89063c0.05,0.29 0.25953,0.39844 0.51953,0.39844c0.4,0 1.04047,-0.43953 1.48047,-1.01953v-6.26953h2v9h-2v-1.36914c-0.79,0.86 -1.73094,1.36914 -2.46094,1.36914c-0.64,0 -1.08859,-0.27906 -1.30859,-0.78906c-0.13,-0.32 -0.23047,-0.80148 -0.23047,-1.52148zM35.0293,29c0.99,0 1.78008,0.31992 2.33008,0.91992c0.41,0.44 0.64063,1.12055 0.64063,2.06055v2.01953h-4v1.80078c0,0.46 0.45,0.83984 1,0.83984c0.55,0 1,-0.37984 1,-0.83984v-0.80078h2c0,0.51 -0.06031,0.93961 -0.07031,1.09961c-0.07,0.35 -0.22875,0.67117 -0.46875,0.95117c-0.54,0.64 -1.35086,0.94922 -2.38086,0.94922c-1.04,0 -1.82062,-0.30039 -2.39062,-0.90039c-0.42,-0.43 -0.68945,-1.08953 -0.68945,-2.01953v-3.06055c0,-0.94 0.23992,-1.65961 0.66992,-2.09961c0.57,-0.6 1.34938,-0.91992 2.35938,-0.91992zM35,30.44922c-0.55,0 -1,0.36984 -1,0.83984v1.32031h2v-1.32031c0,-0.47 -0.45,-0.83984 -1,-0.83984zM28.2207,30.75c-0.155,0 -0.38117,0.07781 -0.60742,0.19531c-0.11313,0.05875 -0.22687,0.12711 -0.33203,0.20117c-0.10516,0.07406 -0.20125,0.15437 -0.28125,0.23438v4.36914c0.08,0.08 0.17609,0.15406 0.28125,0.21875c0.31547,0.19406 0.70695,0.31055 0.93945,0.31055c0.2025,0 0.36113,-0.04932 0.48242,-0.16797c0.04043,-0.03955 0.0775,-0.08727 0.10938,-0.14258c0.06375,-0.11062 0.10969,-0.25414 0.14063,-0.43555c0.03094,-0.18141 0.04688,-0.40156 0.04688,-0.66406v-2.73828c0,-0.2625 -0.01594,-0.48156 -0.04687,-0.66016c-0.06188,-0.35719 -0.18594,-0.55766 -0.38281,-0.65234c-0.09844,-0.04734 -0.21461,-0.06836 -0.34961,-0.06836z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="" viewBox="0,0,256,256">
+                    <g fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                                d="M50.0625,10.4375c-1.84766,0.82031 -3.82812,1.37109 -5.91016,1.62109c2.125,-1.27344 3.75781,-3.28906 4.52344,-5.6875c-1.98437,1.17578 -4.19141,2.03125 -6.53125,2.49219c-1.875,-2 -4.54687,-3.24609 -7.50391,-3.24609c-5.67969,0 -10.28516,4.60156 -10.28516,10.28125c0,0.80469 0.09375,1.58984 0.26953,2.34375c-8.54687,-0.42969 -16.12109,-4.52344 -21.19531,-10.74609c-0.88672,1.52344 -1.39062,3.28906 -1.39062,5.17187c0,3.56641 1.8125,6.71484 4.57422,8.5625c-1.6875,-0.05469 -3.27344,-0.51953 -4.66016,-1.28906c0,0.04297 0,0.08594 0,0.12891c0,4.98438 3.54688,9.13672 8.24609,10.08594c-0.85937,0.23438 -1.76953,0.35938 -2.70703,0.35938c-0.66406,0 -1.30859,-0.0625 -1.9375,-0.1875c1.3125,4.08203 5.10938,7.0625 9.60547,7.14453c-3.51562,2.75781 -7.94922,4.39844 -12.76953,4.39844c-0.83203,0 -1.64844,-0.04687 -2.44922,-0.14453c4.54687,2.92188 9.95312,4.62109 15.76172,4.62109c18.91406,0 29.25781,-15.66797 29.25781,-29.25391c0,-0.44531 -0.01172,-0.89453 -0.02734,-1.33203c2.00781,-1.44922 3.75,-3.26172 5.12891,-5.32422z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="" viewBox="0,0,256,256">
+                    <g fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                                d="M41.625,10.76953c-3.98047,-3.20313 -10.27734,-3.74609 -10.54687,-3.76563c-0.41797,-0.03516 -0.81641,0.19922 -0.98828,0.58594c-0.01562,0.02344 -0.15234,0.33984 -0.30469,0.83203c2.63281,0.44531 5.86719,1.33984 8.79297,3.15625c0.46875,0.28906 0.61328,0.90625 0.32422,1.375c-0.19141,0.30859 -0.51562,0.47656 -0.85156,0.47656c-0.17969,0 -0.36328,-0.05078 -0.52734,-0.15234c-5.03125,-3.12109 -11.3125,-3.27734 -12.52344,-3.27734c-1.21094,0 -7.49609,0.15625 -12.52344,3.27734c-0.46875,0.29297 -1.08594,0.14844 -1.375,-0.32031c-0.29297,-0.47266 -0.14844,-1.08594 0.32031,-1.37891c2.92578,-1.8125 6.16016,-2.71094 8.79297,-3.15234c-0.15234,-0.49609 -0.28906,-0.80859 -0.30078,-0.83594c-0.17578,-0.38672 -0.57031,-0.62891 -0.99219,-0.58594c-0.26953,0.01953 -6.56641,0.5625 -10.60156,3.80859c-2.10547,1.94922 -6.32031,13.33984 -6.32031,23.1875c0,0.17578 0.04688,0.34375 0.13281,0.49609c2.90625,5.10938 10.83984,6.44531 12.64844,6.50391c0.00781,0 0.01953,0 0.03125,0c0.32031,0 0.62109,-0.15234 0.80859,-0.41016l1.82813,-2.51562c-4.93359,-1.27344 -7.45312,-3.4375 -7.59766,-3.56641c-0.41406,-0.36328 -0.45312,-0.99609 -0.08594,-1.41016c0.36328,-0.41406 0.99609,-0.45312 1.41016,-0.08984c0.05859,0.05469 4.69922,3.99219 13.82422,3.99219c9.14063,0 13.78125,-3.95312 13.82813,-3.99219c0.41406,-0.35937 1.04297,-0.32422 1.41016,0.09375c0.36328,0.41406 0.32422,1.04297 -0.08984,1.40625c-0.14453,0.12891 -2.66406,2.29297 -7.59766,3.56641l1.82813,2.51563c0.1875,0.25781 0.48828,0.41016 0.80859,0.41016c0.01172,0 0.02344,0 0.03125,0c1.80859,-0.05859 9.74219,-1.39453 12.64844,-6.50391c0.08594,-0.15234 0.13281,-0.32031 0.13281,-0.49609c0,-9.84766 -4.21484,-21.23828 -6.375,-23.23047zM18.5,30c-1.93359,0 -3.5,-1.78906 -3.5,-4c0,-2.21094 1.56641,-4 3.5,-4c1.93359,0 3.5,1.78906 3.5,4c0,2.21094 -1.56641,4 -3.5,4zM31.5,30c-1.93359,0 -3.5,-1.78906 -3.5,-4c0,-2.21094 1.56641,-4 3.5,-4c1.93359,0 3.5,1.78906 3.5,4c0,2.21094 -1.56641,4 -3.5,4z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="" viewBox="0,0,256,256">
+                    <g fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.33333,5.33333)">
+                            <circle cx="14" cy="24" r="12"></circle>
+                            <ellipse cx="34" cy="24" rx="6" ry="11"></ellipse>
+                            <ellipse cx="44" cy="24" rx="2" ry="10"></ellipse>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="" viewBox="0,0,256,256">
+                    <g fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                                d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="" viewBox="0,0,256,256">
+                    <g fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                                d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+
+            </div><br><br>
+
+            <div class="footer2">
+                © Bloktopia all Rights Reserved 2024
+            </div><br>
+
+            <div class="footer3">
+                <ol class="d-flex justify-content-center gap-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms And Conditions</a></li>
+                    <li><a href="#">Data Deletion</a></li>
+                </ol>
+            </div>
+
+            <div class="footer4">
+
+
+                <div>
+                    Disclaimer. No Investment Advice. The information provided on this website does not constitute
+                    investment advice, financial advice, trading advice, or any other sort of advice and you<br>should
+                    not treat any
+                    of the website's content as such. Bloktopia does not recommend that any cryptocurrency should be
+                    bought,
+                    sold,or held by you. Do conduct your own due diligence<br>and consult your financial advisor before
+                    making any
+                    investment decisions.</div><br>
+
+                <div>You can view any revisions or modifications to the SAFT Agreement by downloading the latest version
+                    here.<br>The SAFT Agreement is password protected, please request the password via email to
+                    hello@bloktopia.com</div><br>
+
+                <div>This site is owned an operated by Lumocolor Limited BVI</div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</html>
