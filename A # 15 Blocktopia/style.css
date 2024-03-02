@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+
+.customnav,
+.customnav2 ol,
+a {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    /* border: 1px solid white; */
+}
+
+.customnav{align-items: center;}
+
+.customnav a:hover {
+    color: #ec00Bf;
+}
+
+
+.customnav2 ol li button {
+    background-color: #ec00Bf;
+    height: 44px;
+    width: 170px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+.customnav2 ol li button:hover {
+    background-color: #ec00c1bb;
+}
+
+.roadmap {
+    margin: 100px;
+}
+
+.roadmap0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 65px;
+}
+
+.roadmap img {
+    border-radius: 5%;
+    border: 1px solid darkgrey;
+}
+
+.roadmap1 {
+    font-size: 70px;
+    font-weight: bolder;
+    line-height: 70px;
+
+}
+
+.roadmap2 {
+    font-size: 70px;
+    font-weight: bolder;
+    color: #ec00Bf;
+    line-height: 70px;
+}
+
+.roadmap3 button {
+    color: #ec00Bf;
+    height: 44px;
+    width: 220px;
+    border-radius: 15px;
+    border: 1px solid #ec00Bf;
+    background-color: #171717;
+}
+
+.roadmap3 button:hover {
+    color: white;
+    height: 44px;
+    width: 220px;
+    border-radius: 15px;
+    border: 1px solid #ec00Bf;
+    background-color: #ec00Bf;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.binance {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.binance .img {
+    opacity: 50%;
+}
+
+.binance .binance1 {
+    position: relative;
+    text-align: center;
+    background-image: url(https://www.bloktopia.com/home/earn_tile.jpg);
+    background-size: cover;
+    width: 586px;
+    height: 346px;
+    border-radius: 12px;
+    border: 2px solid rgba(169, 169, 169, 0.493);
+    padding-top: 70px;
+}
+
+.binance .binance1 .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.binance .binance2 {
+    text-align: center;
+    background-image: url(https://www.bloktopia.com/home/play_tile.jpg);
+    background-size: cover;
+    width: 586px;
+    height: 346px;
+    border-radius: 12px;
+    border: 2px solid rgba(169, 169, 169, 0.493);
+    padding-top: 70px;
+
+
+}
+
+.binance .binance3 {
+    text-align: center;
+    background-image: url(https://www.bloktopia.com/home/dao_tile.jpg);
+    background-size: cover;
+    width: 586px;
+    height: 346px;
+    border-radius: 12px;
+    border: 2px solid rgba(169, 169, 169, 0.493);
+    padding-top: 70px;
+
+
+}
+
+.binance .binance4 {
+    text-align: center;
+    background-image: url(https://www.bloktopia.com/home/nft_tile.jpg);
+    background-size: cover;
+    width: 586px;
+    height: 346px;
+    border-radius: 12px;
+    border: 2px solid rgba(169, 169, 169, 0.493);
+    padding-top: 70px;
+
+
+}
+
+.binance button {
+    color: #ec00Bf;
+    height: 44px;
+    width: 150px;
+    border-radius: 15px;
+    border: 3px solid #ec00Bf;
+    background-color: #171717;
+}
+
+.binance button:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: #ec00Bf;
+}
+
+.footer0 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 11px;
+    background-color: #171717;
+    text-align: center;
+    border: 1px solid darkgray;
+}
+
+.footer0 a,
+li {
+    color: #ec00Bf;
+    list-style: none;
+}
+
+.footer0 a:hover,
+s {
+    color: white;
+}
+
+
+@media only screen and (max-width:425px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .customnav .image {
+        align-items: center;
+    }
+    .roadmap img {
+        width: 400px;
+    }
+
+    .middle img {
+        width: 400px;
+    }
+
+    .middle {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .binance{gap: 100px;}
+
+
+}

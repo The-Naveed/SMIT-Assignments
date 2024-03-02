@@ -1,0 +1,389 @@
+
+.navbar1 {
+    animation: vibrate-1 0.9s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+button,
+images :hover {
+    text-transform: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Change to desired active box shadow */
+    transform: scale(.99);
+    /* Change to desired active scale factor */
+}
+
+
+
+
+a:hover {
+    text-transform: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333333;
+    font-family: 'Afacad', sans-serif;
+
+}
+
+body fieldset {
+    border: 2px solid wheat;
+    margin: 10px;
+    color: #ffbd39;
+}
+
+body legend {
+    padding: 10px;
+    font-size: 20 px;
+    height: auto;
+    color: #ffbd39;
+    text-shadow: 2px 2px black;
+
+}
+
+body fieldset {
+    color: white;
+}
+
+.education p {
+    color: wheat;
+}
+
+.education fieldset {
+    padding: 20px;
+}
+
+
+.education ol {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    color: wheat;
+}
+
+
+.body {
+    list-style: none;
+}
+
+
+
+
+navbar {
+    box-shadow: wheat 1px 1px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-shadow: 2px 2px black;
+
+}
+
+navbar .navbar1 {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+
+
+}
+
+navbar .navbar2 ol {
+    font-size: 20px;
+    border: 1px solid none;
+    color: wheat;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+navbar .navbar2 ol a {
+    font-size: 20px;
+    border: 1px solid none;
+    color: wheat;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-shadow: 4px 4px black;
+
+}
+
+.hero .hero1 .img {
+    border-radius: 59%;
+}
+
+.hero .hero2 h2 {
+    color: #ffbd39;
+    font-size: 50px;
+}
+
+.hero .hero2 h1 {
+    color: #ffbd39;
+    font-size: 50px;
+}
+
+.hero .hero2 p {
+    color: wheat;
+    text-shadow: none;
+}
+
+.hero .hero2 h1 span {
+    color: white;
+    font-size: 50px;
+}
+
+.hero3 {
+    margin: 10px;
+    border: 2px solid none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero3 button {
+    border: 1px solid white;
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ffbd39;
+    font-family: 'Afacad', sans-serif;
+}
+
+
+
+.hero3 button {
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ffbd39;
+    font-family: 'Afacad', sans-serif;
+}
+
+.hero3 .download button {
+    color: wheat;
+    border: 1px solid wheat;
+    background-color: rgb(5, 60, 161);
+}
+
+
+
+
+.milling {
+    border: 2px solid wheat;
+    margin: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.milling .milling1 {
+    color: #ffbd39;
+    align-items: center;
+    text-align: center;
+}
+
+.milling .milling1 span {
+    color: white;
+}
+
+.milling .milling2 {
+    align-items: center;
+    text-align: center;
+}
+
+.education .h1 {
+    color: #ffbd39;
+}
+
+
+
+.projects {
+    margin: 10px;
+}
+
+.projects .projects1 {
+    text-align: center;
+    border: 1px solid blue;
+    color: #ffbd39;
+}
+
+
+.projects .projects2 {
+    text-align: center;
+    color: #ffbd39;
+}
+
+
+.projects .projects2 ol {
+    font-size: 30px;
+    color: wheat;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards {
+    text-align: center;
+}
+
+.cards p {
+    color: wheat;
+    font-weight: bold;
+    border-color: white;
+    font-size: 25px;
+}
+
+
+
+
+@media only screen and (max-width:425px) {
+    navbar .navbar1 {
+        font-size: 25px;
+    }
+
+    .navbar2 {
+        display: none;
+    }
+
+    .hero .hero2 h2 {
+        color: #ffbd39;
+        font-size: 30px;
+    }
+
+    .hero {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .hero .hero2 h1 {
+        color: #ffbd39;
+        font-size: 30px;
+    }
+
+    .hero .hero2 p {
+        color: wheat;
+    }
+
+    .hero .hero2 h1 span {
+        color: white;
+        font-size: 30px;
+    }
+
+    .hero3 button {
+        margin: px;
+        border: 1px solid black;
+        height: 35px;
+        width: 100px;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+        background-color: #ffbd39;
+        font-family: 'Afacad', sans-serif;
+    }
+
+    .hero3 .download button {
+        color: wheat;
+        border: 1px solid wheat;
+        background-color: rgb(5, 60, 161);
+    }
+
+    .milling {
+        border: 1px solid wheat;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        font-weight: bold;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+}
