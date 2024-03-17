@@ -172,379 +172,205 @@
 // document.write("Sub of 3 & 5 is ")
 // document.write(number1-number2)
 
-// Question #3 
+// Question 3
 
-// var a = undefined;
-// document.write("Value after variable declaration is: " + a);
-// a = 5;
-// document.write("<br>Initial value:" + a);
-// a++;
-// document.write("<br>Value after increment is: " + a);
-// a +=7;
-// document.write("<br>Value after addition is: " + a);
-// a--;
-// document.write("<br>Value after decrement is: " + a );
-// var reminder = a % 3;
-// document.write("<br>The reminder is: " + reminder )
+// var declaration = ("Value after variable declaration is undefined")
+// document.write(declaration)
 
-// Question #4 
+// var number = (5)
+// document.write("<br><br>Initial Valeu:")
+// document.write(number)
 
-// var ticket = 600;
-// var total = ticket * 5 ;
-// document.write("Total cost to buy 5 tickets to a movie is " + total +"PKR" )
+// document.write("<br>Valeu after increment is:")
+// document.write(++number)
 
-// Question #5 
- 
-// for(var i = 1; i <= 10; i++) {
-//     document.write("5 X " + i + " = " + (5 * i) + "<br>");
-// }
+// document.write("<br>Valeu after addition is:")
+// document.write(number+7)
 
+// document.write("<br>Valeu after decrement is:")
+// document.write(--number+7)
 
-// Question #7
+// document.write("<br>The reminder is:")
+// document.write(number-number)
 
-// var item1 = 650;
-// var item2 = 100;
-// var quanitity1 = 3;
-// var quanitity2 = 7;
-// var charges = 100;
+// Question 4
 
-// var sum = item1 * quanitity1 + item2 * quanitity2 + charges ;
+// var cost = (600)
+// var ticketCost = (5)
+// document.write("Total cost buy ")
+// document.write(ticketCost)
+// document.write(" Tickets to a movie is ")
+// document.write(cost*ticketCost)
+// document.write("PKR")
 
-// document.write("<h1>Shopping Cart</h1>");
-// document.write("Price of item 1 is " + item1 + "<br>" + "Quantity of item 1 is " + quanitity1 + "<br>"
-// + "Price of item 2 is " + item2 + "<br>" + "Quantity of item 2 is " + quanitity2 + "<br>" + 
-// "Shipping Charges " + charges + "<br>" + "<br>" + "Total Cost of your order is " + sum
-// );
+// Question 5
+
+// var table = (4)
+
+// document.write("Table Of ")
+// document.write(table)
 
 
-// Question #8
+// document.write("<br>4 X 1 = ")
+// document.write(table*1)
 
-// var totalMarks = 980;
-// var marksObtained = 804;
-// var percentage = (totalMarks/marksObtained)*100;
-// document.write("Total marks: " + totalMarks);
-// document.write("<br>Marks obtained: " + marksObtained)
-// document.write("<br>Percentage: " + percentage+ "%")
+// document.write("<br>4 X 2 = ")
+// document.write(table*2)
 
-// Question #9
+// document.write("<br>4 X 3 = ")
+// document.write(table*3)
 
-// var usDollar = 10;
-// var saudiRiyal = 25;
-// var us_to_pak = 104.80;
-// var saudi_to_pak = 28;
-// var totalCurrencyInPkr = (usDollar*us_to_pak) + (saudiRiyal*saudi_to_pak);
-// document.write("<h1>Currency in PKR</h1>")
-// document.write("Total Currency in PKR:" + totalCurrencyInPkr)
+// document.write("<br>4 X 4 = ")
+// document.write(table*4)
 
-// Question #10
+// document.write("<br>4 X 5 = ")
+// document.write(table*5)
 
-// var num = 5;
-// var results = (num + 5) * 10 / 2 ;
-// document.write(results)
+// document.write("<br>4 X 6 = ")
+// document.write(table*6)
 
-// Question #11
+// document.write("<br>4 X 7 = ")
+// document.write(table*7)
 
-// var currentYear = 2023;
-// var birthYear = +prompt("Type your birth year")
-// var age = currentYear - birthYear;
-// document.write("<h1>Age Calculator</h1>")
-// document.write("Current Year: " + currentYear)
-// document.write("<br>Birth Year: " + birthYear)
-// document.write("<br>Your Age is: " + age)
+// document.write("<br>4 X 8 = ")
+// document.write(table*8)
 
+// document.write("<br>4 X 9 = ")
+// document.write(table*9)
 
+// document.write("<br>4 X 10 = ")
+// document.write(table*10)
 
-// Question #12
+// Question 6
 
-// var r = 20;
-// var circumference = 2 * 3.142 * r;
-// var area = 3.142 * (r * r);
-// document.write("<h1>The Geometrizer</h1>")
-// document.write("Radius of a circle: " + r)
-// document.write("<br>The circumference is " + circumference);
-// document.write("<br>The area is " + area);
+// var cel = (25)
+// var f = (cel=(0-32)*5/9)
+// console.log(f)
 
+// Question 7
 
-// Question #13
+// a. Price of item 1 
+// b. Price of item 2 
+// c. Ordered quantity of item 1 
+// d. Ordered Quantity of item 2 
+// // e. Shipping charges
 
-// var snacks = "chocolate chips";
-// var age = 24;
-// var maxAge = 50;
-// var dailySnacks = 3;
-// var cal = (maxAge - age) * 365 * dailySnacks;
-// document.write("<h1>The Lifetime Supply Calculator</h1>")
-// document.write("You will need " +  cal + " to last you until the ripe old age of " +maxAge)
+// var item1 = (650)
+// var item1Qty = (3)
+// var item2 = (100)
+// var item2Qty = (7)
+// var shippingCharges = (100)
 
-// Chapter #6-9 Math Expressions 
+// var cost = (650*3+100*7+100)
 
-// Question #1
+// document.write("<h1>Shopping Cart</h1>")
+// document.write("Price Of Item 1 Is "+item1+"<br>")
+// document.write("Quantity Of Item 1 Is "+item1Qty+"<br>")
+
+// document.write("Price Of Item 2 Is "+item2+"<br>")
+// document.write("Quantity Of Item 2 Is "+item2Qty+"<br>")
+// document.write("Shipping Charges "+shippingCharges+"<br><br><br>")
+
+// document.write("Total Cost Of Your Order Is "+cost+"<br>")
+
+// Question 8
+
+// var valeu1 = (980)
+// var valeu2 = (804)
+// var ans = (valeu1/valeu2*100)
+
+// document.write("<h1>Mark Sheet</h1>")
+// document.write("Total Marks "+ans+"")
+
+// Question 9
+
+// var saudi = (28)
+// var dollar = (104.80)
+// var total = ((10*dollar)+(25*saudi))
+
+// document.write("Total Currency Of In PKR Is"+total+"")
+
+// Question 10
+
+// var ans = (5*10/5)
+// console.log(ans)
+
+// Question 11
+
+// var currentYear = (2024)
+// var birthYear = (2000)
+// var ans = (currentYear-birthYear)
+// console.log(ans)
+
+// Question 12
+
+// var rad = (20)
+// var cir = (2*3.142(rad))
+// console.log(cir)
+
+// Question 13
+
+// var snake = ("cocomo")
+// var age = (4)
+// var maxAge = (24)
+// var amount = (5)
+// console.log((age-maxAge)*amount)
+
+// Chapter 06 to 09
+
+// Question 1
 
 // var a = 10;
-// document.write("<h4>Result:</h4>")
-// document.write("The Value of a is: " + a)
-// document.write("<br><br>The Value of ++a is: "+ ++a)
-// document.write("<br>Now the value of a is:" +a)
-// document.write("<br><br> The value of a++ is: " + a++)
-// document.write("<br>Now the value of a is: " +a)
-// document.write("<br><br>The value of --a is: "+ --a)
-// document.write("<br>Now the value of a is: " + a)
-// document.write("<br><br>The value of a-- is: " + a--)
-// document.write("<br>Now the value of a is: " + a)
+// var ans = (a + ++a + a++ + --a + a--);
+// alert(ans)
 
+// Question 2
 
-// Question #2
+// var a = (2);
+// var b = (1);
+// var result = (--a - --b + ++b + b--);
+// alert(result)
 
-// var a = 2 ;
-// var b = 1 ; 
-// var result = --a - --b + ++b + b--; 
+// --a; --a - --b; 
+// --a - --b + ++b;
+// --a - --b + ++b + b
 
-// --a; pre-deceremnt a=1
-// --a - --b; 1 - 0 = 1 
-// --a - --b + ++b; 1 + 1 = 2
-// --a - --b + ++b + b--; 2 + 1 = 3 
+// Question 3
 
+// alert("Welcome & Greetings")
 
-// document.write("a is: " + a)
-// document.write("<br>b is: " + b)
-// document.write("<br>Result is: " + result)
+// Question 4
 
-// Question #3
+// Question 5
 
-// var user = prompt("What is your name?")
-// document.write("Welcome to Our Site " + user)
+// var userNum = prompt("Enter Your Number","Enter Your Text Here")
 
-// Question #4 is missing in the pdf 
+// // Question 6
 
-// Question #5 
+// var sub1 = ("English");
+// var sub2 = ("Math");
+// var sub3 = ("Urdu");
+// var numSub1 = ("100");
+// var numSub2 = ("100");
+// var numSub3 = ("100");
 
-// var number = prompt("Please enter a number:", "");
-//     if (number == "") {
-//       number = 5;
-//     }
-//     document.write("<table>");
-//     for (var i = 1; i <= 10; i++) {
-//       document.write("<tr>");
-//       document.write("<td>" + number + "</td>");
-//       document.write("<td>x</td>");
-//       document.write("<td>" + i + "</td>");
-//       document.write("<td>=</td>");
-//       document.write("<td>" + number * i + "</td>");
-//       document.write("</tr>");
-//     }
-//     document.write("</table>");
+// Chapter 09 to 11
 
-// Question #6 
-
-
-// var subject1 = prompt("Enter the name of first subject: ");
-// var subject2 = prompt("Enter the name of second subject: ");
-// var subject3 = prompt("Enter the name of third subject: ");
-// var totalMarks = 100;
-// var obtainedMarks1 = +prompt("Enter the obtained marks for "+subject1+": ");
-// var obtainedMarks2 = +prompt("Enter the obtained marks for "+subject2+": ");
-// var obtainedMarks3 = +prompt("Enter the obtained marks for "+subject3+": ");
-// var totalObtainedMarks = (obtainedMarks1) + (obtainedMarks2) + (obtainedMarks3);
-// var percentage = (totalObtainedMarks/300)*100;
-// document.write("")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Chapter #9-11 USER INPUT & CONDITIONAL STATEMENT
-
-// Question #1
-
-// var city = prompt("Type City Name")
-// if(city == "Karachi"){
-//     alert("Welcome To The City Where There Is No Light!")
-// }else{
-//     alert("Welcome")
+// var city = prompt("Enter Your City","Enter Current Your City");
+// if(city==="karachi"){
+// alert("Welcome Dear")
 // }
 
-// Question #2
+var gender = prompt("Enter Your Gender", "Enter Text Here");
 
-// var gender = prompt("Type Your Gender")
-// if(gender == "male"){
-//     alert("Good Morning/Afternoon Sir.")
-// }else if(gender == "Female"){
-//     alert("Good Morning/Afternoon Ma'am.")
-// }else{
-//     alert("Good Day!!")
-// }
-
-// Question #3 
-
-// var signal = prompt("Write The Signal Color.")
-// if(signal == "Red"){
-//     alert("Must Stop!")
-// }else if(signal == "Yellow"){
-//     alert("Ready To Move!")
-// }else if(signal == "Green"){
-//     alert("Move Now!")
-// }else{
-//     alert("Please Write the correct color!!!")
-// }
+if (gender==="male") {
+    alert("welcome to my page")
+} else { (gender==="female")
+    alert("you are not eligible")
+}
 
 
-// Question #4
 
-// var fuel = +prompt("Type How many liters fuels are remaining in your car!")
-// if(fuel < 0.25){
-//     alert("Please refill the fuel in your car")
-// }else{
-//     alert("You are good to go!!")
-// }
-
-
-// Question #5
-
-// var a = 4;
-// if(++a ===5){
-//     alert("given condition for variable a is true")
-// }; // gives output / given condition for variable a is true.
-// var b =82;
-// if(b++ === 83){
-//     alert("given condition for variable b is true")
-// };
-// var c = 12;
-// if (c++ === 13){
-// alert("condition 1 is true");
-// }
-// if (c === 13){
-// alert("condition 2 is true");
-// } // gives output / condition 2 is true
-// if (++c < 14){
-// alert("condition 3 is true");
-// }
-// if(c === 14){
-// alert("condition 4 is true");
-// }; // gives output / condition 4 is true.
-// var materialCost = 20000;
-// var laborCost = 2000;
-// var totalCost = materialCost + laborCost;
-// if (totalCost === laborCost + materialCost){
-// alert("The cost equals");
-// }// gives output / The Cost equals.
-// if (true){
-// alert("True");
-// } // gives output / true
-// if (false){
-// alert("False");
-// };
-// if("car" < "cat"){
-//     alert("car is smaller than cat");
-// }; // gives output / car is smaller than cat.
-
-// Question #6
-
-// var Subject1 = prompt("Enter marks obtained in Subject1: ");
-// var Subject2 = prompt("Enter marks obtained in Subject2: ");
-// var Subject3 = prompt("Enter marks obtained in Subject3: ");
-// var TotalMarks = prompt("Enter Total Marks: ");
-// var ObtainedMarks = parseInt(Subject1) + parseInt(Subject2) + parseInt(Subject3);
-// var Percentage = (ObtainedMarks/TotalMarks)*100;
-// document.write("Total Marks: " + TotalMarks + "<br>");
-// document.write("Marks Obtained: " + ObtainedMarks + "<br>");
-// document.write("Percentage: " + Percentage + "%" + "<br>");
-
-// if (Percentage >= 80) {
-//     document.write("Grade: A+" + "<br>");
-//     document.write("Remarks: Excellent" + "<br>");
-// } else if (Percentage >= 70 && Percentage < 80) {
-//     document.write("Grade: A" + "<br>");
-//     document.write("Remarks: Good" + "<br>");
-// } else if (Percentage >= 60 && Percentage < 70) {
-//     document.write("Grade: B" + "<br>");
-//     document.write("Remarks: Average" + "<br>");
-// } else if (Percentage >= 50 && Percentage < 60) {
-//     document.write("Grade: C" + "<br>");
-// } else if(Percentage >= 50 && Percentage < 40) {
-//     document.write("Grade: D" + "<br>");
-// }else{
-//     document.write("You Failed.")
-// }
-
-// Question #7
-
-// let secretNumber = 5;
-// let guess = prompt("Guess a number between 1 and 10");
-
-// if (guess == secretNumber) {
-//     document.write("Bingo! Correct answer");
-// } else if (guess == secretNumber + 1) {
-//     document.write("Close enough to the correct answer");
-// } else {
-//     document.write("Wrong answer!");
-// }
-
-// Question #8
-
-
-// var divisionNumber = +prompt("Enter number");
-// if(divisionNumber % 3 == 0){
-//     document.write( divisionNumber + " is divisible by 3");
-// }else{
-//     document.write(divisionNumber + " is not divisible by 3");
-// }
-
-
-// Question #9
-
-// let userInput = +prompt("Please enter a number:");
-// if (userInput % 2 === 0) {
-//     document.write("The number " + userInput + " is an even number.");
-// } else {
-//     document.write("The number " + userInput + " is an odd number.");
-// }
-
-// Question #10
-
-// var temp = +prompt("Input The Temperature: ")
-// if(temp > 40){
-//     document.write("It is too hot outside.")
-// } else if( temp > 30){
-//     document.write("The Weather today is Normal.")
-// } else if( temp > 20){
-//     document.write("Today's Weather is cool")
-// } else if( temp > 10){
-//     document.write("OMG! Today's weather is so Cool.")
-// }
-
-// Question #11
-
-// var number1 = +prompt("ENTER NUMBER 1")
-// var number2 = +prompt("ENTER NUMBER 2")
-// var opt = prompt("ENTER opt")
-
-
-// if (opt === "+") {
-//     document.write(number1+ number2)
-// } else if (opt === "-") {
-//     document.write(number1 - number2)
-// } else if (opt === "*") {
-//     document.write(number1 * number2)
-
-// } else if (opt === "/") {
-//     document.write(number1 / number2)
-
-// } else {
-//     document.write("INVALID OpT")
-// }
 
 
 
