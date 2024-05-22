@@ -190,3 +190,22 @@
 // var cir = 2(3.142*rad)
 
 // alert(cir);
+
+// 13. The Lifetime Supply Calculator: Ever wonder how
+// much a “lifetime supply” of your favorite snack is?
+// Wonder no more.
+// a. Store your favorite snack into a variable
+// b. Store your current age into a variable.
+// c. Store a maximum age into a variable.
+// d. Store an estimated amount per day (as a number).
+// e. Calculate how many would you eat total for the rest of
+// your life.
+// Output the result to the screen like so: “You will need
+// NNNN to last you until the ripe old age of NN”.
+
+// var favSnack = "Zinger Burger";
+// var currentAge = 24;
+// var maxAge = 25;
+// var estAmount = 1;
+// var total = (currentAge*maxAge)
+// alert(total)
