@@ -53,55 +53,58 @@
 // e) Now calculate total marks and percentage and show the
 // result in browser like this.(Hint: user table)
 
-// var subjectOne = prompt("Enter First Subject", "English");
-// var subjectTwo = prompt("Enter Second Subject", "Math");
-// var subjectThree = prompt("Enter Third Subject", "Science");
-// var totalMarks = 100;
-// var subjectOneObtain = +prompt("Enter First Subject Numbers", "91");
-// var subjectTwoObtain = +prompt("Enter Second Subject Numbers", "78");
-// var subjectThreeObtain = +prompt("Enter Third Subject Numbers", "45");
+var subjectOne = prompt("Enter First Subject", "English");
+var subjectTwo = prompt("Enter Second Subject", "Math");
+var subjectThree = prompt("Enter Third Subject", "Science");
+var totalMarks = 100;
+var subjectOneObtain = +prompt("Enter First Subject Numbers", "91");
+var subjectTwoObtain = +prompt("Enter Second Subject Numbers", "78");
+var subjectThreeObtain = +prompt("Enter Third Subject Numbers", "45");
 
-// // For First Subject
+// For First Subject
 
-// var firstSub = document.getElementById("firstsubject");
-// firstSub.innerHTML = subjectOne;
+var firstSub = document.getElementById("firstsubject");
+firstSub.innerHTML = subjectOne;
 
-// var firstTotal = document.getElementById("total1");
-// firstTotal.innerHTML = totalMarks;
+var firstTotal = document.getElementById("total1");
+firstTotal.innerHTML = totalMarks;
 
-// var firstObt = document.getElementById("firstobtain");
-// firstObt.innerHTML = subjectOneObtain;
+var firstObt = document.getElementById("firstobtain");
+firstObt.innerHTML = subjectOneObtain;
 
-// var firstPer = document.getElementById("firstper");
-// firstPer.innerHTML = ((totalMarks * subjectOneObtain) / 100 + "%")
+var firstPer = document.getElementById("firstper");
+firstPer.innerHTML = ((totalMarks * subjectOneObtain) / 100 + "%")
 
-// // For Second Subject
+// For Second Subject
 
-// var secondSub = document.getElementById("secondsubject");
-// secondSub.innerHTML = subjectTwo;
+var secondSub = document.getElementById("secondsubject");
+secondSub.innerHTML = subjectTwo;
 
-// var secondTotal = document.getElementById("total2");
-// secondTotal.innerHTML = totalMarks;
+var secondTotal = document.getElementById("total2");
+secondTotal.innerHTML = totalMarks;
 
-// var secondObt = document.getElementById("secondobtain");
-// secondObt.innerHTML = subjectTwoObtain;
+var secondObt = document.getElementById("secondobtain");
+secondObt.innerHTML = subjectTwoObtain;
 
-// var secondPer = document.getElementById("secondper");
-// secondPer.innerHTML = ((totalMarks * subjectTwoObtain) / 100 + "%")
+var secondPer = document.getElementById("secondper");
+secondPer.innerHTML = ((totalMarks * subjectTwoObtain) / 100 + "%")
 
-// // For Third Subject
+// For Third Subject
 
-// var thirdSub = document.getElementById("thirdsubject");
-// thirdSub.innerHTML = subjectThree;
+var thirdSub = document.getElementById("thirdsubject");
+thirdSub.innerHTML = subjectThree;
 
-// var thirdTotal = document.getElementById("total3");
-// thirdTotal.innerHTML = totalMarks;
+var thirdTotal = document.getElementById("total3");
+thirdTotal.innerHTML = totalMarks;
 
-// var thirdObt = document.getElementById("thirdobtain");
-// thirdObt.innerHTML = subjectThreeObtain;
+var thirdObt = document.getElementById("thirdobtain");
+thirdObt.innerHTML = subjectThreeObtain;
 
-// var thirdPer = document.getElementById("thirdper");
-// thirdPer.innerHTML = ((totalMarks * subjectThreeObtain) / 100 + "%");
+var thirdPer = document.getElementById("thirdper");
+thirdPer.innerHTML = ((totalMarks * subjectThreeObtain) / 100 + "%");
+
+var resultFinal = document.getElementById("result");
+resultFinal.innerHTML = ("Result is:" + (Math.round((subjectOneObtain+subjectTwoObtain+subjectThreeObtain)/3)) + "%");
 
 
 // A06 Completed
